@@ -1,8 +1,8 @@
-ARG BASE_TAG=server-cuda
-FROM ghcr.io/ggml-org/llama.cpp:${BASE_TAG}
+ARG BASE_TAG=latest
+FROM localhost/ik_llama.cpp:${BASE_TAG}
 
 # has to be after the FROM
-ARG LS_VER=89
+ARG LS_VER=163
 
 WORKDIR /app
 RUN \
